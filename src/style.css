@@ -1,0 +1,38 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+.card {
+  height: 300px;
+  width: 200px;
+  padding: 20px;
+  border-radius: 13px;
+  border: 1px solid;
+  font-size: 60px;
+  position: relative;
+}
+.card::before {
+  position: absolute;
+  top: -9px;
+  left: 20px;
+  font-size: 60px;
+}
+.card::after {
+  position: absolute;
+  bottom: 9px;
+  right: 20px;
+  font-size: 60px;
+}
+.spade::after,
+.spade::before {
+  content: "\2660";
+}
+.clubs::after,
+.clubs::before {
+  content: "\2663";
+}
+.hearts::after,
+.hearts::before {
+  content: "\2665";
+}
+.diamonds::after,
+.diamonds::before {
+  content: "\2666";
+}
